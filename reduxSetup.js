@@ -1,8 +1,9 @@
 const INITIAL_STATE = { payload: '╮(╯_╰)╭', description: 'idk', url: 'https://www.jemoticons.com/en/idk/' };
+
 const moodReducer = (state = INITIAL_STATE, action) => {
 	switch (action.type) {
-		case 'INITIAL_STATE':
-			return INITIAL_STATE;
+		// case 'INITIAL_STATE':
+		// 	return INITIAL_STATE;
 		case 'FLIRTY':
 			return { ...state, payload: '^.~', description: 'flirty', url: 'https://www.jemoticons.com/en/flirty/' };
 		case 'FACEPALM':
